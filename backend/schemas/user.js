@@ -9,12 +9,14 @@ export default {
             type : 'string'
         },
         {
+            name : 'mail',
+            title : 'Mail',
+            type : 'string'
+        },
+        {
             name : 'userpic',
             title : 'UserPic',
-            type : 'image',
-            options : {
-                hotspot : true
-            }
+            type : 'string'
         }
     ]
 }

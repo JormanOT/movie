@@ -4,9 +4,9 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 import { useSession, signOut } from 'next-auth/react'
 
-
 const Layout = ({ children }) => {
     const { data : session } = useSession();
+
     return (
         <div>
             <Head>

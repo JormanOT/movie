@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { MdOutlineLocalMovies } from 'react-icons/md'
 
 const NavBar = ({ user, signOut }) => {
+
   return (
     <div className='navbar-container'>
       <Link href='/' className="flex gap-4 items-center font-extrabold text-white">

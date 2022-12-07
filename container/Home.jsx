@@ -6,10 +6,7 @@ import Movies from '../components/Movies'
 import MoviesGroup from '../components/MoviesGroup'
 import Services from '../components/Services'
 
-
-
-
-const Home = ({service, movies}) => {
+const Home = ({ service, movies }) => {
 
   return (
     <>
