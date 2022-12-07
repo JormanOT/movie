@@ -8,20 +8,19 @@ export default function Home({ service, movies }) {
 
   const { data: session } = useSession();
 
-  useEffect(() => {
-    const { id, name, image, email } = session.user;
-
-      const doc = {
-        _id: id,
-        _type: 'users',
-        name: name,
-        mail: email,
-        userpic: image
+    useEffect(() => {
+      if(session){
+        const { id, name, image, email } = session.user;
+        const doc = {
+          _id: id,
+          _type: 'users',
+          name: name,
+          mail: email,
+          userpic: image
+        }
+        Client.createIfNotExists(doc).then(() => console.log('User Created!'));F
       }
-      
-      Client.createIfNotExists(doc).then(() => console.log('User Created!'));
-  }, [])
-
+    }, [])
 
 
   return (
